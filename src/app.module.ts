@@ -6,6 +6,7 @@ import { Task } from './tasks/entities/task.entity';
 
 @Module({
   imports: [
+    //configuracion para habilitar variables de entorno
     ConfigModule.forRoot(),
     TypeOrmModule.forRoot({
       type: 'mysql',
